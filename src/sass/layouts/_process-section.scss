@@ -3,31 +3,31 @@
     min-height: 800px;
     height: 80vh;
 }
-.circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 6px solid lightblue;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .outline {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 50%);
-    background-color: transparent;
-    border: 6px solid #519be5;
-    border-radius: 50%;
-    outline: none;
-    transform:rotate(90deg);
-  }
-  .details{
-    width: 505px;
-    height: 76px;
-    padding: 21px 20px;
-    border-radius: 3px;
-  }
+  .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 6px solid lightblue;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .outline {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 50%);
+      background-color: transparent;
+      border: 6px solid #519be5;
+      border-radius: 50%;
+      outline: none;
+      transform:rotate(90deg);
+    }
+    .details{
+      width: 505px;
+      height: 76px;
+      padding: 21px 20px;
+      border-radius: 3px;
+    }

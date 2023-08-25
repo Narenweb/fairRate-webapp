@@ -50,6 +50,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+     //form to document btn
+     formBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        validateRadioButtons();
+
+        if (inputFormValidate()) {
+            formSection.classList.add("hide-section");
+            documentSection.classList.remove("hide-section");
+            localStorage.removeItem("userWasOnCurrentSection");
+            localStorage.setItem("userWasOnCurrentSection", "document");
+        }
+            // Get form data
+            const formData = {
+                date: document.getElementById('date-picker').value,
+                address: document.getElementById('address').value,
+                email: document.getElementById('email').value,
+                timePeriod:document.getElementById('dropdownInput').value,
+            };
+            localStorage.setItem('formData', JSON.stringify(formData));
+
+    });
+    // const storedFormData = localStorage.getItem("formData");
+    // if (storedFormData) {
+    //     const formData = JSON.parse(storedFormData);
+    //     document.getElementById("date-picker").value = formData.datePicker;
+    //     document.getElementById("address").value = formData.address;
+    //     document.getElementById("email").value = formData.email;
+    //     document.getElementById("dropdownInput").value = formData.timePeriod;
+    //     // Populate other form fields here
+    // }
+
     //form to home back btn
     const backBtnHome = document.querySelector('#back-btn-home');
     backBtnHome.addEventListener("click", () => {
@@ -68,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem("userWasOnCurrentSection", "form");
     })
 
-    //document to form back btn
+    //document to result next btn
     const formDocBtn = document.getElementById('submit-doc-btn');
     formDocBtn.addEventListener("click", (e) => {
         e.preventDefault();
@@ -142,19 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
             errorRadio.textContent = "";
         }
     }
-    //form to document btn
-    formBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        validateRadioButtons();
-
-        if (inputFormValidate()) {
-            formSection.classList.add("hide-section");
-            documentSection.classList.remove("hide-section");
-            localStorage.removeItem("userWasOnCurrentSection");
-            localStorage.setItem("userWasOnCurrentSection", "document");
-        }
-    });
-
+   
     function inputFormValidate() {
         const addressVal = address.value.trim();
         const emailVal = email.value.trim();
@@ -565,7 +584,6 @@ document.addEventListener('DOMContentLoaded', () => {
         displayUploadedFiles();
     });
     // localStorage.clear();
-
     //fetch that in username
     const firstNameInput = document.getElementById('firstName');
     const secondNameInput = document.getElementById('SecondName');
@@ -590,12 +608,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Save the full name in local storage
         localStorage.setItem('fullName', fullName);
-        const greeting = "Good morning";
+        const greeting = "Good morning ";
         mainName.previousSibling.textContent = greeting;
     });
-
-
-
-
 })
 

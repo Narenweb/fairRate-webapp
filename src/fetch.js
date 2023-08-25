@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const selectedYears = Array.from(
       document.querySelectorAll('.small-checkboxes input[type="checkbox"]:checked')
     ).map((checkbox) => parseInt(checkbox.value)); // Extract the values
-console.log(selectedYears);
+// console.log(selectedYears);
     const selectedTypes = Array.from(document.querySelectorAll('.checkbox-container input[type="checkbox"]:checked'))
     .map(checkbox => checkbox.value);
 // console.log(selectedTypes);
