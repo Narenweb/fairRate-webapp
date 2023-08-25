@@ -1,0 +1,22 @@
+@mixin btn($bg-color,$space){
+    width: 180px;
+    padding: $space;
+    border-radius: 2px;
+    background-color: $bg-color;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    }
+}
+@mixin inputs($padding,$width){
+    padding:$padding;
+    border-radius: 3px;
+    border: solid 1px #c4cdd5;
+    background-color: $light-color;
+    outline: none;
+    width: $width;
+}

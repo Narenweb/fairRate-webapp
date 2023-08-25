@@ -1,0 +1,23 @@
+.container-box{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 10px 20px;
+    width: 100%;
+}
+.input-group {
+    &.success input {
+        outline: 1px solid $success;
+        border-radius: 8px;
+
+    }
+
+    &.error input {
+        outline: 1px solid $danger;
+        border-radius: 8px;
+    }
+
+    .error {
+        color: $danger;
+        margin-top: 5px;
+    }
+}

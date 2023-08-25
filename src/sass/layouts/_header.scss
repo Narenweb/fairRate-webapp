@@ -1,0 +1,39 @@
+header{
+.bell-icon{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.user-profile{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.drop{
+    background-color: transparent;
+}
+.nav-item{
+    ul{
+        li{
+            &:after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                background-color: $sky-blue-color;
+                display: block;
+                transition: 0.4s ease-out;
+                margin: 0 auto;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+        .disabled-style{
+            color: #919eab;
+        }
+    }
+}
+
+
+}

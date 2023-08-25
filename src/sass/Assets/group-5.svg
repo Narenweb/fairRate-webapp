@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185" height="39" viewBox="0 0 185 39">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#454F5B" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="24">
+            <tspan x="87" y="29">FairRate</tspan>
+        </text>
+        <path fill="#4AD5F6" d="M27 6l27 33H0L27 6zm-4 27h8V22h-8v11z"/>
+        <path fill="#95CDB1" d="M54 0L40 16h27L54 0"/>
+        <path fill="#FFC48B" d="M69 18L55 34h27L69 18"/>
+    </g>
+</svg>

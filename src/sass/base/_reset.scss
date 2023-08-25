@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+   
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+li {
+    cursor: pointer;
+ }
+
+a {
+    text-decoration: none;
+ }
+
+.hide-section{
+    display: none;
+}

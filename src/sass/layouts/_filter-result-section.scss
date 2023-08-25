@@ -1,0 +1,46 @@
+.filter-result-section {
+    background-color: $light-grey-color;
+    min-height: 1100px;
+    height: 80vh;
+
+    .filter-wrapper {
+        width: 100%;
+        height: auto;
+
+        .data-wrapper {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        table {
+            thead {
+                tr {
+                    th {
+                        color: #212b36;
+                        font-size: 14px;
+                        font-weight: 300;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .range-input {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .range-value {
+        width: 70px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+
+    .check-wrapper {
+        width: 30%;
+        height: 400px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}

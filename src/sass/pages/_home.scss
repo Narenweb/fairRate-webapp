@@ -1,0 +1,30 @@
+// Base imports
+@import '../base/reset';
+@import '../base/typography';
+
+// Utils imports
+@import '../utils/mixins';
+@import '../utils/variables';
+@import '../utils/helpers';
+
+
+// Components imports
+@import '../components/button';
+@import '../components/input';
+@import '../components/checkBox';
+@import '../components/dropdown';
+
+
+
+//Layouts imports
+@import '../layouts/header';
+@import '../layouts/hero';
+@import '../layouts/form-section';
+@import '../layouts/footer';
+@import '../layouts/document-section';
+@import '../layouts/result-section';
+@import '../layouts/filter-result-section';
+@import '../layouts/process-section';
+@import '../layouts/dashboard-section';
+
+

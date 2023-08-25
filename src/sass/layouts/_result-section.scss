@@ -1,0 +1,54 @@
+.result-section {
+    background-color: $light-grey-color;
+    min-height: 1700px;
+    height: 80vh;
+
+    .result-container {
+        width: 900px;
+        height: auto;
+        margin: 26px 150px 80px;
+        border-radius: 3px;
+        box-shadow: 0 6px 8px 0 rgba(164, 164, 164, 0.21);
+        background-color: $light-color;
+
+        table {
+            thead {
+                tr {
+                    background-color: #dfe3e8;
+
+                    th {
+                        color: #212b36;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            tbody {
+                .data {
+                    width: 100%;
+                    box-shadow: 0 1px 0 0 #dfe3e8;
+                    border-bottom: 1px solid #dfe3e8;
+
+                    .percentage {
+                        font-size: 26px;
+                        color:#007ace;
+                    }
+                    .next-btn{
+                        background-color: #637381;
+                        transition: 0.4s ease-out;
+                    &:hover{
+                        background-color:$dark-color;
+                    }
+                    }
+                }
+
+            }
+        }
+        .load-more,.go-back{
+            background-color: #c4cdd5;
+            &:hover{
+                background-color: grey;
+            }
+        }
+    }
+}

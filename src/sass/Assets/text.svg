@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="648" height="581" viewBox="0 0 648 581">
+    <defs>
+        <rect id="b" width="630" height="563" rx="3"/>
+        <filter id="c" width="105.1%" height="105.7%" x="-2.5%" y="-1.8%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1" result="shadowSpreadOuter1"/>
+            <feOffset dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="4"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.644185799 0 0 0 0 0.644185799 0 0 0 0 0.644185799 0 0 0 0.213824728 0"/>
+        </filter>
+        <path id="e" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/>
+        <filter id="g" width="206.7%" height="169.6%" x="-53.3%" y="-34.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="h" d="M1.085.385v1H.983v-1h.102z"/>
+        <path id="j" d="M1.34 1h-1V.339h1z"/>
+        <path id="l" d="M1.085.118v1H.169v-1h.916z"/>
+        <path id="n" d="M1.085.56V1H.168V.56h.917z"/>
+        <path id="p" d="M7.042 21H0V.502h14.085V21H7.042z"/>
+        <path id="r" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM8 9h8v10H8V9zm7.5-5l-1-1h-5l-1 1H5v2h14V4h-3.5z"/>
+        <rect id="a" width="329" height="278" rx="3"/>
+        <mask id="t" width="329" height="278" x="0" y="0" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(9 3)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <g stroke-linecap="square">
+                <use fill="#000" filter="url(#c)" xlink:href="#b"/>
+                <rect width="631" height="564" x="-.5" y="-.5" fill="#FFF" stroke="#DFE3E8" rx="3"/>
+            </g>
+            <path fill="#FAFAFA" stroke="#000" stroke-opacity=".12" d="M-.5 409.5h631v124H-.5v-124z" mask="url(#d)"/>
+        </g>
+        <path fill="#D8D8D8" d="M29 473h590v1H29z"/>
+        <text fill="#637381" font-family="OpenSans, Open Sans" font-size="13" transform="translate(29 429)">
+            <tspan x="28" y="20">MY_ID.PDF</tspan>
+        </text>
+        <g fill-rule="nonzero">
+            <path fill="#DA3737" d="M45 433H31c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2z"/>
+            <path fill="#FFF" d="M37.313 441c-.2.645-.487 1.334-.878 2.093-.174.331-.365.645-.435.907l.096-.035a16.367 16.367 0 0 1 2.904-.81 2.98 2.98 0 0 1-.357-.28c-.521-.445-.973-1.09-1.33-1.875zm6.408 3.661c-.165.184-.455.29-.881.29-.736 0-1.936-.222-2.904-.716-1.664.184-2.903.407-3.9.726-.048.02-.106.039-.174.068-1.2 2.052-2.09 2.971-2.874 2.971a.868.868 0 0 1-.426-.106l-.465-.3-.029-.049a.879.879 0 0 1-.048-.522c.106-.513.658-1.326 1.82-2.052.183-.136.473-.29.86-.474.29-.503.6-1.094.93-1.742.493-.997.803-1.984 1.045-2.836v-.01c-.358-1.17-.571-1.877-.213-3.164.087-.368.406-.745.765-.745h.232c.222 0 .435.077.59.232.639.639.339 2.197.02 3.484-.02.058-.03.107-.04.136.388 1.093.94 1.974 1.55 2.477.251.194.532.387.841.561.436-.048.852-.067 1.249-.067 1.2 0 1.926.212 2.206.667a.779.779 0 0 1 .117.533.935.935 0 0 1-.271.638zm-.802-.311c-.09-.1-.45-.35-1.712-.35-.063 0-.126 0-.207.1.658.32 1.297.51 1.712.51.063 0 .117-.01.17-.02h.037c.045-.02.072-.03.081-.13-.018-.03-.036-.07-.081-.11zM35 445c-.249.12-.45.23-.568.31-.84.65-1.373 1.31-1.432 1.69.533-.15 1.23-.81 2-2zm2.187-6l.05-.037c.07-.295.1-.553.16-.756l.03-.147c.1-.525.08-.793-.09-1.014l-.15-.046c-.02.028-.05.074-.07.11-.17.388-.16 1.06.07 1.89z"/>
+        </g>
+        <text fill="#637381" font-family="OpenSans, Open Sans" font-size="11" transform="translate(29 429)">
+            <tspan x="276" y="17">1 MBs</tspan>
+        </text>
+        <text fill="#637381" font-family="OpenSans, Open Sans" font-size="11" transform="translate(29 429)">
+            <tspan x="368" y="17">UPLOADED</tspan>
+        </text>
+        <text fill="#637381" font-family="OpenSans, Open Sans" font-size="11" transform="translate(29 429)">
+            <tspan x="191" y="17">DPF</tspan>
+        </text>
+        <g transform="translate(597 429)">
+            <mask id="f" fill="#fff">
+                <use xlink:href="#e"/>
+            </mask>
+            <g fill="#000" fill-opacity=".54" mask="url(#f)">
+                <path d="M0 0h24v24H0z"/>
+            </g>
+        </g>
+        <g filter="url(#g)" transform="translate(601 440)">
+            <path fill="#FFF" d="M10.027 12.088l.004-.007.022.082-.026-.075zm1.495 5.472a.51.51 0 0 1 .092-.29l.848-1.194a2.928 2.928 0 0 0 .542-1.703V9.497c0-2.075-.221-2.417-.976-2.48v1.48a.499.499 0 1 1-1 0V6.572c-.058-.176-.288-.653-1.058-.643v2.568a.5.5 0 1 1-1 0V5.594c-.094-.166-.371-.552-.885-.597v3.5a.5.5 0 1 1-1 0V5.073c-.001-.012-.007-.022-.007-.034V2.997c0-.558-.387-.986-.9-.997-.547.012-1.064.487-1.064.997v7.157a.5.5 0 0 1-.887.318L2.7 8.61a1.027 1.027 0 0 0-.712-.29h-.001c-.272 0-.536.114-.744.324-.328.333-.316.891.026 1.244l1.38 1.976c.619.89 1.117 1.86 1.479 2.884.329 1.004 1.099 2.473 1.718 2.473a.5.5 0 0 1 .5.5v.776h5.176v-.936z"/>
+            <g transform="translate(13 8.498)">
+                <mask id="i" fill="#fff">
+                    <use xlink:href="#h"/>
+                </mask>
+                <path fill="#FFF" d="M.983.385" mask="url(#i)"/>
+            </g>
+            <g transform="translate(4 20.498)">
+                <mask id="k" fill="#fff">
+                    <use xlink:href="#j"/>
+                </mask>
+                <path fill="#FFF" d="M.34.339" mask="url(#k)"/>
+            </g>
+            <g transform="translate(13 18.498)">
+                <mask id="m" fill="#fff">
+                    <use xlink:href="#l"/>
+                </mask>
+                <path fill="#FFF" d="M.169.118" mask="url(#m)"/>
+            </g>
+            <path fill="#FFF" d="M12.585 19.498h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1"/>
+            <g transform="translate(13 20.498)">
+                <mask id="o" fill="#fff">
+                    <use xlink:href="#n"/>
+                </mask>
+                <path fill="#FFF" d="M.645.56" mask="url(#o)"/>
+            </g>
+            <g transform="translate(0 .498)">
+                <mask id="q" fill="#fff">
+                    <use xlink:href="#p"/>
+                </mask>
+                <path fill="#000" d="M12.585 20h-7a.5.5 0 0 1 0-1H12.584a.5.5 0 0 1 0 1zm-6.238-2l-.002-.778a.5.5 0 0 0-.5-.499c-.617 0-1.388-1.469-1.717-2.472a12.043 12.043 0 0 0-1.48-2.884L1.27 9.391c-.342-.353-.354-.912-.026-1.244a1.05 1.05 0 0 1 .743-.326h.002c.272 0 .535.116.712.292l1.527 1.861a.5.5 0 1 0 .886-.317V2.5c0-.511.517-.986 1.064-.998.514.011.9.44.9.998v2.042c0 .012.006.022.008.033V8a.5.5 0 0 0 1 0V4.499c.513.046.79.431.884.598V8a.5.5 0 1 0 1 0V5.431c.77-.009 1 .468 1.059.643V8a.5.5 0 0 0 1 0V6.519c.755.064.976.406.976 2.481v4.875c0 .616-.188 1.205-.543 1.704l-.848 1.194a.508.508 0 0 0-.09.289V18H6.348zm7.298.439A1.493 1.493 0 0 0 12.585 18h-.061v-.778l.755-1.064c.474-.67.726-1.459.726-2.283V9c0-.099-.008-.173-.01-.266a12.574 12.574 0 0 0-.01-.35c-.1-2.34-.774-2.805-2.11-2.873-.28-.553-.939-1.176-2.139-1.071a2.136 2.136 0 0 0-1.447-.907.49.49 0 0 0-.204-.045h-.006V2.5c0-1.099-.825-1.976-1.9-1.998C5.059.525 4.114 1.44 4.114 2.5v5.761l-.672-.817a2.031 2.031 0 0 0-1.455-.623c-.542 0-1.058.221-1.456.623-.708.717-.699 1.902-.032 2.58l1.33 1.913a11.084 11.084 0 0 1 1.351 2.636c.153.467.91 2.589 2.166 3.058l.002.393a1.48 1.48 0 0 0-.348.094 1.493 1.493 0 0 0-.916 1.382 1.493 1.493 0 0 0 .917 1.382c.18.076.377.118.583.118h7a1.493 1.493 0 0 0 1.062-.439 1.499 1.499 0 0 0 0-2.122z" mask="url(#q)"/>
+            </g>
+        </g>
+        <g>
+            <text fill="#637381" font-family="OpenSans, Open Sans" font-size="13" transform="translate(29 494)">
+                <tspan x="28" y="20">IMG1231.JPG</tspan>
+            </text>
+            <g fill-rule="nonzero">
+                <path fill="#DA3737" d="M45 498H31c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2z"/>
+                <path fill="#DA3737" d="M45 498H31c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2z"/>
+                <path fill="#FFF" d="M41.5 507.5l-2.5 3.01-3.5-4.51-4.5 6h14z"/>
+            </g>
+            <text fill="#637381" font-family="OpenSans, Open Sans" font-size="11" transform="translate(29 494)">
+                <tspan x="276" y="17">1 MBs</tspan>
+            </text>
+            <text fill="#637381" font-family="OpenSans, Open Sans" font-size="11" transform="translate(29 494)">
+                <tspan x="368" y="17">UPLOADED</tspan>
+            </text>
+            <text fill="#637381" font-family="OpenSans, Open Sans" font-size="11" transform="translate(29 494)">
+                <tspan x="191" y="17">JPG</tspan>
+            </text>
+            <g transform="translate(597 494)">
+                <mask id="s" fill="#fff">
+                    <use xlink:href="#r"/>
+                </mask>
+                <g fill="#000" fill-opacity=".54" mask="url(#s)">
+                    <path d="M0 0h24v24H0z"/>
+                </g>
+            </g>
+        </g>
+        <g font-family="OpenSans, Open Sans">
+            <text fill="#454F5B" font-size="18" transform="translate(388 106)">
+                <tspan x="0" y="56"> • A Governent issued</tspan>
+            </text>
+            <text fill="#454F5B" font-size="18" transform="translate(388 106)">
+                <tspan x="0" y="179"> • Whithin it’s expiry date</tspan>
+            </text>
+            <text fill="#454F5B" font-size="16" transform="translate(388 106)">
+                <tspan x="42" y="85"> • Passport</tspan> <tspan x="42" y="113"> • Driver License</tspan> <tspan x="42" y="141"> • National ID Card</tspan>
+            </text>
+            <text fill="#212B36" font-size="13" transform="translate(388 106)">
+                <tspan x="0" y="14">YOUR DOCUMENT BUST BE:</tspan>
+            </text>
+        </g>
+        <path fill="#FFF" stroke="#DFE3E8" stroke-linecap="square" d="M12 2.5h624a3.5 3.5 0 0 1 3.5 3.5v61.5H8.5V6A3.5 3.5 0 0 1 12 2.5z"/>
+        <text fill="#212B36" font-family="OpenSans, Open Sans" font-size="18" transform="translate(9 3)">
+            <tspan x="194.331" y="39">Upload photo Indentification</tspan>
+        </text>
+        <g transform="translate(29 88)">
+            <use fill="#F9FAFB" stroke="#C4CDD5" stroke-dasharray="4,6" stroke-width="4" mask="url(#t)" xlink:href="#a"/>
+            <text fill="#919EAB" font-family="OpenSans, Open Sans" font-size="14">
+                <tspan x="13.454" y="264">JPG, PNG or PDF only, maximum file size - 5MB</tspan>
+            </text>
+            <text font-family="OpenSans, Open Sans" font-size="18">
+                <tspan x="49.763" y="160" fill="#212B36">Drag files here to upload or </tspan> <tspan x="45" y="185" fill="#4AD5F6" text-decoration="underline">select a file</tspan> <tspan x="137.926" y="185" fill="#212B36"> from your device</tspan>
+            </text>
+            <g fill-rule="nonzero" opacity=".357">
+                <path stroke="#979797" stroke-dasharray="1,1" stroke-width="2" d="M205.946 45.853l-14.489-3.882c-1.992-.534-4.046.686-4.587 2.704l-7.886 29.36c-.541 2.018.628 4.102 2.62 4.636l21.752 5.828c1.992.534 4.064-.681 4.605-2.7l5.901-22.023-7.916-13.923zM201 57.659L203.588 48l7.071 12.247L201 57.66z"/>
+                <path fill="#637381" d="M196.045 68.34c-.36.571-.816 1.163-1.39 1.794-.254.275-.52.53-.655.764l.101-.01a16.367 16.367 0 0 1 3.016-.03 2.98 2.98 0 0 1-.272-.363c-.39-.564-.659-1.305-.8-2.155zm5.14 5.06c-.206.135-.514.162-.925.052-.71-.19-1.813-.716-2.62-1.443-1.655-.253-2.91-.359-3.955-.308-.052.006-.113.01-.186.02-1.69 1.671-2.788 2.329-3.545 2.126a.868.868 0 0 1-.384-.213l-.371-.41-.015-.055a.879.879 0 0 1 .088-.517c.236-.468.979-1.11 2.289-1.51.212-.084.533-.158.954-.236.411-.41.863-.9 1.349-1.442.734-.835 1.289-1.708 1.743-2.468l.003-.01c-.043-1.223-.066-1.96.613-3.111.18-.333.585-.615.931-.522l.225.06c.215.057.4.187.51.377.452.782-.242 2.21-.883 3.37-.034.051-.056.095-.073.121.091 1.157.396 2.15.855 2.794.193.252.414.511.668.76.433.066.84.155 1.223.258 1.16.31 1.806.704 1.959 1.216a.779.779 0 0 1-.026.544.935.935 0 0 1-.427.547zm-1.163-.565c-.061-.12-.345-.455-1.563-.781-.06-.017-.122-.033-.226.043.552.479 1.121.828 1.521.935.061.017.116.02.17.025l.036.01c.048-.008.077-.01.112-.105-.01-.034-.017-.077-.05-.127zm-7.573-1.317a5.006 5.006 0 0 0-.628.152c-.98.41-1.665.91-1.821 1.262.553-.007 1.398-.464 2.45-1.414zm3.731-5.538l.058-.023c.144-.266.24-.508.35-.688l.067-.135c.233-.481.283-.745.176-1.002l-.133-.084a1.157 1.157 0 0 0-.096.089c-.265.33-.43.982-.422 1.843z"/>
+            </g>
+            <path d="M112 63h64v64h-64z"/>
+            <path fill="#919EAB" fill-rule="nonzero" d="M149.875 67h-21.5c-2.956 0-5.348 2.385-5.348 5.3L123 114.7c0 2.915 2.392 5.3 5.348 5.3h32.277c2.956 0 5.375-2.385 5.375-5.3V82.9L149.875 67zM155 104.125h-7.875V112h-5.25v-7.875H134v-5.25h7.875V91h5.25v7.875H155v5.25zM147 86V71l15 15h-15z"/>
+        </g>
+        <text fill="#4AD5F6" font-family="OpenSans, Open Sans" font-size="14" text-decoration="underline" transform="translate(9 3)">
+            <tspan x="380.376" y="362">See an example image</tspan>
+        </text>
+    </g>
+</svg>

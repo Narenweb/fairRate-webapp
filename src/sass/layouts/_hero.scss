@@ -1,0 +1,11 @@
+.hero-section {
+    background-color: $light-grey-color;
+    height: 80vh;
+    .hero-wrapper {
+        .hero-text {
+            width: 537px;
+            font-size: 36px;
+            font-weight: 600;
+        }
+    }
+}

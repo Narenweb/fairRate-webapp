@@ -1,0 +1,92 @@
+.form-section {
+  background-color: $light-grey-color;
+  min-height: 1100px;
+  height: 80vh;
+
+  .form-text-wrapper {
+    .form-heading {
+      font-size: 36px;
+      font-weight: 600;
+      width: 300px;
+    }
+
+    .form-para {
+      color: #6a7c92;
+      font-size: 14px;
+      line-height: 1.71;
+      width: 300px;
+    }
+
+    .dob {
+      font-size: 12px;
+      color: #47495a;
+    }
+
+  }
+
+  .form-data-wrapper {
+    .form-box {
+      width: 200px;
+      height: 166px;
+      padding: 125px 25px 17px 10px;
+      border-radius: 3px;
+      box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+      border: solid 2px #c4cdd5;
+      background-color: $light-color;
+      transition: border-color 0.3s ease-in-out;
+      position: relative;
+
+      svg{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+      }
+      .checkbox{
+        position: absolute;
+      }
+    }
+
+    .checked {
+      border-color: #23C0F5;
+    }
+
+    .icon path {
+      fill: #c4cdd5;
+      transition: fill 0.3s ease-in-out;
+    }
+
+    .checked .icon path {
+      fill: #23C0F5;
+    }
+    .box-text{
+      font-size: 15px;
+      position: relative;
+      top:-5px;
+      color: #47495a;
+    }
+
+  }
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+
+  svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 20px;
+  }
+
+  .date-picker {
+    padding-left: 50px;
+  }
+}
+
+.flatpickr-calendar {
+  margin-top: 10px;
+  margin-left: 40px;
+}

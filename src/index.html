@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./sass/Assets/favicon-32x32.png">
+    <title>FairRate</title>
+</head>
+
+<body>
+    <header class="flex items-center justify-between container-box">
+        <div class="logo flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23"
+                class="mr-9 cursor-pointer">
+                <path fill="#919EAB" fill-rule="evenodd"
+                    d="M15 2c0 .536-.06.688 0 1-.304-.063-.451 0-1 0H1c-.549 0-.696-.063-1 0 .06-.312 0-.464 0-1V1C0 .464.06.312 0 0c.304.063.451 0 1 0h13c.549 0 .696.063 1 0-.06.312 0 .464 0 1v1zM1 10c-.536 0-.688-.063-1 0 .063-.312 0-.464 0-1V8c0-.536.063-.688 0-1 .312.063.464 0 1 0h22c.536 0 .688.063 1 0-.063.312 0 .464 0 1v1c0 .536-.063.688 0 1-.312-.063-.464 0-1 0H1zm0 13c-.536 0-.688-.063-1 0 .063-.312 0-.464 0-1v-1c0-.536.063-.688 0-1 .312.063.464 0 1 0h22c.536 0 .688.063 1 0-.063.312 0 .464 0 1v1c0 .536-.063.688 0 1-.312-.063-.464 0-1 0H1zm13-10c.549 0 .696.063 1 0-.06.312 0 .464 0 1v1c0 .536-.06.688 0 1-.304-.063-.451 0-1 0H1c-.549 0-.696-.063-1 0 .06-.312 0-.464 0-1v-1c0-.536.06-.688 0-1 .304.063.451 0 1 0h13z" />
+            </svg>
+            <a href="javascript:void(0);"> <img src="./sass/Assets/group-5.svg" alt="logo-img" loading="lazy"></a>
+        </div>
+        <div class="nav-item flex items-center">
+            <ul class="flex w-80 justify-evenly">
+                <li class="disabled-style home-route">Home</li>
+                <li class="app">Application</li>
+                <li class="disabled-style">Documents</li>
+            </ul>
+            <div class="user-details flex items-center w-60 justify-evenly">
+                <img src="./sass/Assets/bell.png" alt="bell-icon" class="bell-icon cursor-pointer" loading="lazy">
+                <img src="	https://i.postimg.cc/zBtyMs3k/man.webp" alt="user-profile"
+                    class="user-profile cursor-pointer" loading="lazy">
+                <div class="user-name">Adrian Manea</div>
+                <img src="./sass/Assets/drop.png" alt="drop" class="w-3 h-3 cursor-pointer" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <!-- Hero section -->
+    <div class="hero-section" id="heroSection">
+        <div class="hero-wrapper flex flex-col items-center justify-center pt-20 text-center">
+            <h1 class="hero-text mb-7">I'll get you an awesome price in seconds. Ready to go?</h1>
+            <div class="input-container flex">
+                <div class="input-group">
+                    <input type="text" placeholder="FirstName" class="inp mr-5" id="firstName" autocomplete="off">
+                    <div class="error text-left h-8"></div>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" placeholder="SecondName" class="inp" id="SecondName" autocomplete="off">
+                    <div class="error text-left"></div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="btn-1" id="submit-btn">NEXT</a>
+        </div>
+    </div>
+
+    <!-- Form section -->
+    <section class="form-section py-20 px-40  hide-section" id="formSection">
+        <div class="container-box flex justify-between">
+            <div class="form-text-wrapper">
+                <h2 class="form-heading mb-2">Fill the form on the right</h2>
+                <p class="form-para mb-16">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p class="dob mb-3">DATE OF BIRTH</p>
+                <div class="search-container">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>DAD53655-22A7-4A5F-835D-9EF64A2F1FAC</title>
+                        <desc>Created with sketchtool.</desc>
+                        <defs>
+                            <path
+                                d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M20,18 L4,18 L4,8 L12,13 L20,8 L20,18 Z M12,11 L4,6 L20,6 L12,11 Z"
+                                id="path-1"></path>
+                        </defs>
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ic/mail_outline">
+                                <g id="ic_mail_outline_24px">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Shape" fill-rule="nonzero"></g>
+                                    <g id="c/#000000/1" mask="url(#mask-2)" fill="#000000">
+                                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="input-group">
+                        <input class="date-picker inp-1" type="datetime-local" placeholder="Pick-Date" id="date-picker">
+                        <div class="error text-left h-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-data-wrapper flex flex-col items-center w-64">
+                <div class="search-container mb-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <defs>
+                            <path id="a"
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9zm5-2.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" />
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <mask id="b" fill="#fff">
+                                <use xlink:href="#a" />
+                            </mask>
+                            <g fill="#000" mask="url(#b)">
+                                <path d="M0 0h24v24H0z" />
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="input-group">
+                        <input class="inp-1" placeholder="Enter the exact address" id="address" autocomplete="off">
+                        <div class="error text-left h-2"></div>
+                    </div>
+                </div>
+                <div class="search-container mb-7">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>DAD53655-22A7-4A5F-835D-9EF64A2F1FAC</title>
+                        <desc>Created with sketchtool.</desc>
+                        <defs>
+                            <path
+                                d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M20,18 L4,18 L4,8 L12,13 L20,8 L20,18 Z M12,11 L4,6 L20,6 L12,11 Z"
+                                id="path-1"></path>
+                        </defs>
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ic/mail_outline">
+                                <g id="ic_mail_outline_24px">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Shape" fill-rule="nonzero"></g>
+                                    <g id="c/#000000/1" mask="url(#mask-2)" fill="#000000">
+                                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="input-group">
+                        <input class="inp-1 pl-12" placeholder="Email Address" id="email" autocomplete="off">
+                        <div class="error text-left h-4"></div>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <div class="input-container">
+                        <label class="custom-checkbox">
+                            <input type="radio" name="radio-btn" class="customCheckbox" data-input="input-check-1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="date-picker inp-1 inputBox mb-4 " id="input-check-1" placeholder="Condo"
+                            autocomplete="off" readonly>
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <div class="input-container">
+                        <label class="custom-checkbox">
+                            <input type="radio" name="radio-btn" class="customCheckbox" data-input="input-check-2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="date-picker inp-1 inputBox mb-4" id="input-check-2" placeholder="Co-op"
+                            autocomplete="off" readonly>
+
+                    </div>
+                </div>
+
+                <div class="search-container">
+                    <div class="input-container">
+                        <label class="custom-checkbox">
+                            <input type="radio" name="radio-btn" class="customCheckbox" data-input="input-check-3">
+                            <span class="checkmark -mt-1"></span>
+                        </label>
+                        <input class="date-picker inp-1 inputBox" placeholder="House" id="input-check-3"
+                            autocomplete="off" readonly>
+                    </div>
+                    <div class="error-radio h-8  text-left text-red-500"></div>
+                </div>
+
+                <div class="dropdown mt-4">
+                    <div class="input-group">
+                        <input type="text" id="dropdownInput" class="dropdown-input inp-2"
+                            placeholder="Select an option" autocomplete="off" readonly>
+                        <div class="error text-left h-2"></div>
+                    </div>
+                    <div class="dropdown-icon -mt-2">
+                        <span class="icon-up">&#9650;</span>
+                        <span class="icon-down">&#9660;</span>
+                    </div>
+                    <div class="dropdown-options">
+                        <div class="arrow-up"></div>
+                        <ul>
+                            <li>This month</li>
+                            <li>Next Month</li>
+                            <li>December 2018</li>
+                            <li>January 2019</li>
+                            <li>I don't know</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-wrapper flex justify-between mt-60">
+                    <div class="form-box mr-8">
+                        <svg width="46px" class="icon" height="48px" viewBox="0 0 46 48" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
+                            <title>91F519C1-E77E-4A73-A20E-9EAF7FCC61F5</title>
+                            <desc>Created with sketchtool.</desc>
+                            <g id="Workspace" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="2-1-1-Address" transform="translate(-837.000000, -849.000000)" fill="#23C0F5"
+                                    fill-rule="nonzero">
+                                    <g id="Group-7" transform="translate(760.000000, 814.000000)">
+                                        <g id="criminal" transform="translate(77.000000, 35.000000)">
+                                            <path
+                                                d="M21.3534676,27.2656587 L24.6465324,27.2656587 C25.0727785,27.2656587 25.4183445,26.9175292 25.4183445,26.488121 C25.4183445,26.0587127 25.0727785,25.7105832 24.6465324,25.7105832 L21.3534676,25.7105832 C20.9272215,25.7105832 20.5816555,26.0587127 20.5816555,26.488121 C20.5816555,26.9175292 20.9272215,27.2656587 21.3534676,27.2656587 Z"
+                                                id="Shape"></path>
+                                            <path
+                                                d="M42.842774,35.1991361 C42.8206488,35.1879395 42.797906,35.1778834 42.7748546,35.1688639 L36.9281208,32.9021857 C36.3167427,32.6651922 35.8472752,32.1700562 35.6400179,31.5439827 L35.4056957,30.8356976 C36.7149978,28.9421339 37.2193512,27.0834039 35.9911409,25.2273693 C35.4352304,24.3872138 34.7510962,23.7819784 33.9078658,23.3833607 C34.2749396,22.0103326 34.4742729,20.5451404 34.4742729,19.0237581 L34.4742729,18.9719222 L34.5257271,18.9719222 C35.4052841,18.9719222 36.1208054,18.2510929 36.1208054,17.3650108 L36.1208054,15.7062635 C36.1208054,15.1021685 35.7878971,14.5754125 35.2975391,14.3009935 L35.2975391,12.3887689 C35.2975391,5.55752916 29.7809351,0 23,0 C16.2190649,0 10.7024609,5.55752916 10.7024609,12.3887689 L10.7024609,14.3009935 C10.2121029,14.5754125 9.87919463,15.1021685 9.87919463,15.7062635 L9.87919463,17.3650108 C9.87919463,18.2510929 10.5947159,18.9719222 11.4742729,18.9719222 L11.5257271,18.9719222 L11.5257271,19.0237581 C11.5257271,20.5451404 11.7250604,22.0103326 12.0921342,23.3834644 C11.2488009,23.7820821 10.5647696,24.3873175 10.0088591,25.227473 C8.78064877,27.0834039 9.28500224,28.9421339 10.5943043,30.8358013 L10.3599821,31.5440864 C10.1528277,32.1702635 9.68336018,32.6652959 9.07187919,32.9022894 L3.22514541,35.1688639 C3.20199105,35.1777797 3.17935123,35.1879395 3.15722595,35.1991361 C1.20978971,36.1800778 0,38.1520173 0,40.3455032 L0,45.5637149 C0,46.9070929 1.08485906,48 2.41834452,48 L23,48 L43.5816555,48 C44.9151409,48 46,46.9070929 46,45.5637149 L46,40.3455032 C46,38.1520173 44.7902103,36.1800778 42.842774,35.1991361 Z M34.7068456,26.0900216 C35.1573781,26.7708337 35.525481,27.7880605 34.3626174,29.6256415 C33.7587517,30.5798359 32.8521298,31.5944708 31.8155347,32.6557581 C31.4402282,32.5479395 31.181311,32.2061339 31.181311,31.8092786 L31.181311,28.9762419 C31.181311,28.9408898 31.1781208,28.9063672 31.1735928,28.8722592 C32.1012081,27.7186004 32.867566,26.3702462 33.4275928,24.8822462 C33.9340045,25.158013 34.3480045,25.5478186 34.7068456,26.0900216 Z M13.4142998,22.2894168 L13.6044743,22.2894168 C14.1482416,22.2894168 14.6592841,22.5027732 15.0458076,22.8920605 C15.7218121,23.5730799 16.6207159,23.9481641 17.5767338,23.9481641 L28.4232662,23.9481641 C29.3792841,23.9481641 30.278085,23.5730799 30.9561477,22.889987 C31.340613,22.5026695 31.8517584,22.2894168 32.3955257,22.2894168 L32.5857002,22.2894168 C31.4414631,27.5989633 27.5778747,31.5161987 23,31.5161987 C18.4221253,31.5161987 14.5585369,27.5989633 13.4142998,22.2894168 Z M15.68034,33.5066955 C16.1064832,33.0648467 16.3624161,32.4642765 16.3624161,31.8093823 L16.3624161,30.4763715 C18.237302,32.1098229 20.5286577,33.0712743 23,33.0712743 C25.4713423,33.0712743 27.762698,32.1098229 29.6375839,30.4763715 L29.6375839,31.8092786 C29.6375839,32.4641728 29.8934139,33.0646393 30.319557,33.5064881 C28.0745101,34.9188078 25.5559329,35.663067 23,35.663067 C20.44417,35.663067 17.925387,34.9189114 15.68034,33.5066955 Z M23,37.2181425 C24.7616868,37.2181425 26.5051588,36.9001814 28.1689799,36.288 C26.06183,38.4446825 24.0560447,40.786108 23,43.4087948 C21.9439553,40.786108 19.9380671,38.4445788 17.8310201,36.2878963 C19.4948412,36.9001814 21.2383132,37.2181425 23,37.2181425 Z M34.5771812,17.3650108 C34.5771812,17.3936242 34.5541298,17.4168467 34.5257271,17.4168467 L32.8277405,17.4168467 L32.8277405,15.6544276 L34.5257271,15.6544276 C34.5541298,15.6544276 34.5771812,15.6776501 34.5771812,15.7062635 L34.5771812,17.3650108 Z M28.7114094,17.4168467 L28.7114094,15.6544276 L31.2841163,15.6544276 L31.2841163,17.4168467 L28.7114094,17.4168467 Z M23.7718121,17.4168467 L23.7718121,15.6544276 L27.1677852,15.6544276 L27.1677852,17.4168467 L23.7718121,17.4168467 Z M18.8322148,17.4168467 L18.8322148,15.6544276 L22.2281879,15.6544276 L22.2281879,17.4168467 L18.8322148,17.4168467 Z M14.7158837,17.4168467 L14.7158837,15.6544276 L17.2885906,15.6544276 L17.2885906,17.4168467 L14.7158837,17.4168467 Z M29.6375839,14.0993521 L26.2416107,14.0993521 L26.2416107,12.3887689 C26.2416107,9.23414255 25.9785772,6.260527 25.5010828,4.01541253 C25.3367383,3.24264363 25.1554139,2.5865054 24.9547427,2.04243629 C25.9276376,2.53912743 26.8287025,3.40571922 27.5900179,4.59877322 C28.910434,6.66806048 29.6375839,9.43453996 29.6375839,12.3887689 L29.6375839,14.0993521 Z M21.3020134,14.0993521 L21.3020134,12.3887689 C21.3020134,9.5747041 21.5204877,6.87747732 21.9171991,4.79398704 C22.3160716,2.69919654 22.7777181,1.8500216 23,1.60774082 C23.2222819,1.8500216 23.6839284,2.69919654 24.0828009,4.79398704 C24.4795123,6.87747732 24.6979866,9.5747041 24.6979866,12.3887689 L24.6979866,14.0993521 L21.3020134,14.0993521 Z M21.0452573,2.04253996 C20.8444832,2.58660907 20.6632617,3.2427473 20.4989172,4.0155162 C20.0214228,6.260527 19.7583893,9.23414255 19.7583893,12.3887689 L19.7583893,14.0993521 L16.3624161,14.0993521 L16.3624161,12.3887689 C16.3624161,9.43453996 17.089566,6.66806048 18.4099821,4.59887689 C19.1712975,3.40571922 20.0723624,2.5392311 21.0452573,2.04253996 Z M33.753915,12.3887689 L33.753915,14.0993521 L31.1812081,14.0993521 L31.1812081,12.3887689 C31.1812081,9.14000864 30.3669978,6.07485097 28.8885145,3.75799568 C28.7182013,3.49104104 28.5408904,3.23818575 28.3579195,2.99808207 C31.5802864,4.87122246 33.753915,8.37905832 33.753915,12.3887689 Z M17.6421834,2.9979784 C17.4591096,3.23818575 17.2819016,3.49104104 17.1115884,3.75789201 C15.6330022,6.07485097 14.8187919,9.14000864 14.8187919,12.3887689 L14.8187919,14.0993521 L12.246085,14.0993521 L12.246085,12.3887689 C12.246085,8.37905832 14.4197136,4.87122246 17.6421834,2.9979784 Z M11.4228188,17.3650108 L11.4228188,15.7062635 C11.4228188,15.6776501 11.4458702,15.6544276 11.4742729,15.6544276 L13.1722595,15.6544276 L13.1722595,17.4168467 L11.4742729,17.4168467 C11.4458702,17.4168467 11.4228188,17.3936242 11.4228188,17.3650108 Z M18.1144295,18.9719222 C18.1132975,18.9891317 18.1118568,19.0062376 18.1118568,19.0237581 L18.1118568,19.8531317 C18.1118568,20.28254 18.4574228,20.6306695 18.8836689,20.6306695 C19.309915,20.6306695 19.655481,20.28254 19.655481,19.8531317 L19.655481,19.0237581 C19.655481,19.0062376 19.6540403,18.9891317 19.6529083,18.9719222 L26.3470917,18.9719222 C26.3459597,18.9891317 26.344519,19.0062376 26.344519,19.0237581 L26.344519,19.8531317 C26.344519,20.28254 26.690085,20.6306695 27.1163311,20.6306695 C27.5425772,20.6306695 27.8881432,20.28254 27.8881432,19.8531317 L27.8881432,19.0237581 C27.8881432,19.0062376 27.8867025,18.9891317 27.8855705,18.9719222 L32.9306488,18.9719222 L32.9306488,19.0237581 C32.9306488,19.6040086 32.8983356,20.1749287 32.8371051,20.7343413 L32.3955257,20.7343413 C31.4395078,20.7343413 30.5407069,21.1094255 29.8626443,21.7925184 C29.478179,22.1798359 28.9670336,22.3930886 28.4232662,22.3930886 L17.5767338,22.3930886 C17.0329664,22.3930886 16.5219239,22.1797322 16.1354004,21.7904449 C15.459396,21.1094255 14.5604922,20.7343413 13.6044743,20.7343413 L13.1627919,20.7343413 C13.1016644,20.1749287 13.0692483,19.6040086 13.0692483,19.0237581 L13.0692483,18.9719222 L18.1144295,18.9719222 Z M11.2931544,26.0900216 C11.6519955,25.5478186 12.0659955,25.158013 12.5725101,24.8822462 C13.1325369,26.3702462 13.8988949,27.7186004 14.8265101,28.8722592 C14.8219821,28.9063672 14.8187919,28.9408898 14.8187919,28.9762419 L14.8187919,31.8093823 C14.8187919,32.2062376 14.5598747,32.5480432 14.1845682,32.6558618 C13.1479732,31.5945745 12.2412483,30.5799395 11.6374855,29.6257451 C10.4746219,27.7880605 10.8426219,26.7709374 11.2931544,26.0900216 Z M1.54362416,45.5637149 L1.54362416,40.3455032 C1.54362416,38.7569417 2.41330201,37.3274125 3.81573602,36.6062721 L9.62624609,34.3535896 C10.5871007,33.9812009 11.3416242,33.2346609 11.7312349,32.2845097 C12.6414586,33.3347041 13.7232304,34.3978575 14.8238345,35.479257 C18.091481,38.6898661 21.7684966,42.3039654 22.1875391,46.4450281 L9.77628635,46.4450281 L9.77628635,43.9050713 C9.77628635,43.4756631 9.43072036,43.1275335 9.00447427,43.1275335 C8.57822819,43.1275335 8.23266219,43.4756631 8.23266219,43.9050713 L8.23266219,46.4449244 L2.41834452,46.4449244 C1.93601342,46.4449244 1.54362416,46.0496242 1.54362416,45.5637149 Z M44.4563758,45.5637149 C44.4563758,46.0496242 44.0639866,46.4449244 43.5816555,46.4449244 L37.7673378,46.4449244 L37.7673378,43.9049676 C37.7673378,43.4755594 37.4217718,43.1274298 36.9955257,43.1274298 C36.5692796,43.1274298 36.2237136,43.4755594 36.2237136,43.9049676 L36.2237136,46.4449244 L23.8124609,46.4449244 C24.2315034,42.3038618 27.9084161,38.6897624 31.1761655,35.4791533 C32.2767696,34.3977538 33.3585414,33.3346004 34.2687651,32.284406 C34.6583758,33.2345572 35.4128993,33.9810972 36.3737539,34.353486 L42.184264,36.6061685 C43.586698,37.3274125 44.4563758,38.756838 44.4563758,40.3455032 L44.4563758,45.5637149 Z"
+                                                id="Shape"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="search-container">
+                            <div class="input-container">
+                                <label class="custom-checkbox">
+                                    <input type="radio" name="radio-name" class="checkbox customCheckbox-1">
+                                    <span class="checkmark"></span>
+                                </label><span class="box-text ml-14 ">Burglar Alarm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-box">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="icon"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20%" viewBox="0 0 108 144"
+                            enable-background="new 0 0 108 144" xml:space="preserve">
+                            <path fill="none" stroke="none" d="
+           M109.000000,75.000000 
+               C109.000000,85.020897 109.000000,95.041786 108.675507,105.652466 
+               C108.011971,106.593697 107.512489,106.885674 107.356995,107.305168 
+               C100.966591,124.545334 89.252785,136.498215 72.048096,143.074203 
+               C71.238327,143.383698 70.677017,144.343201 70.000000,145.000000 
+               C60.312439,145.000000 50.624878,145.000000 40.347534,144.675507 
+               C39.406109,144.011887 39.113911,143.511703 38.694263,143.356842 
+               C21.434311,136.987228 9.453170,125.302948 2.925820,108.049217 
+               C2.619385,107.239212 1.656934,106.677399 0.999999,106.000000 
+               C1.000000,96.312439 1.000000,86.624878 1.323625,76.351753 
+               C2.779367,73.585503 3.982289,71.438263 5.031139,69.218231 
+               C9.201457,60.391209 14.349522,52.260448 22.837345,47.030548 
+               C24.969290,45.716915 28.721916,44.857601 30.595146,45.876144 
+               C32.717201,47.029976 34.608490,50.463943 34.771683,53.023113 
+               C35.300232,61.311760 34.954468,69.654167 35.031086,77.975082 
+               C35.049290,79.952156 35.159397,81.987625 35.643173,83.890495 
+               C37.359547,90.641602 42.611309,93.926674 48.519638,92.132721 
+               C55.092815,90.136902 58.184830,84.758110 55.404121,78.207779 
+               C52.370743,71.062241 48.425079,64.286049 44.635498,57.483448 
+               C38.210426,45.949917 37.015690,33.771183 40.928673,21.405201 
+               C43.160275,14.352799 46.925400,7.785651 50.000000,1.000000 
+               C53.030594,1.000000 56.061188,1.000000 59.585728,1.379241 
+               C60.768726,4.302419 61.241268,6.930701 62.192520,9.372494 
+               C64.092300,14.249092 65.273697,19.852114 68.503540,23.675192 
+               C76.302261,32.906330 85.590027,40.883533 93.340454,50.149994 
+               C98.568428,56.400604 102.202538,63.984734 106.545074,70.975174 
+               C107.374283,72.310013 108.182236,73.658051 109.000000,75.000000 
+           M61.525917,67.012367 
+               C62.991154,70.535980 64.816223,73.957176 65.853683,77.602531 
+               C68.883430,88.248238 62.456985,99.057953 51.724930,101.850807 
+               C40.202461,104.849358 28.529799,98.957077 26.415972,87.988457 
+               C24.955286,80.408966 25.406336,72.461761 24.991886,64.679474 
+               C24.882895,62.632885 24.732246,60.588512 24.562239,57.944557 
+               C23.252270,58.779324 22.585032,59.014156 22.194773,59.480690 
+               C7.730158,76.772491 5.897128,105.377731 23.924149,122.507797 
+               C36.447033,134.407578 51.077477,137.965759 67.181961,133.539230 
+               C83.263939,129.118851 94.080116,118.116470 97.887535,101.759705 
+               C103.020020,79.710480 93.798416,62.455051 77.498207,48.422970 
+               C68.702812,40.851429 60.857635,32.692188 56.025543,21.994600 
+               C55.117393,19.984074 54.314903,17.925819 53.129627,15.090589 
+               C48.580040,23.316746 46.062572,31.308786 48.869095,39.305656 
+               C52.135933,48.614159 57.009872,57.358646 61.525917,67.012367 
+           z" />
+                        </svg>
+                        <div class="search-container">
+                            <div class="input-container">
+                                <label class="custom-checkbox">
+                                    <input type="radio" name="radio-name" class="checkbox customCheckbox-1">
+                                    <span class="checkmark"></span>
+                                </label><span class="box-text ml-14 -mt-2">Burglar Alarm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-container flex mt-14">
+                    <a href="javascript:void(0);" class="btn-back mr-12" id="back-btn-home">Back</a>
+                    <a href="javascript:void(0);" class="btn-1" id="submit-form-btn">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="document-section hide-section" id="documentSection">
+        <div class="container-box text-center flex flex-col items-center pt-16">
+            <h1 class="document-text mb-12">Few more step ahead
+                upload your ID Document 👆</h1>
+
+            <div class="heading-wrapper flex text-sm mb-7">
+                <div class="identity w-80 py-4 px-20 text-white">
+                    PHOTO IDENTIFICATION
+                </div>
+                <div class="w-80 py-4 px-20 bg-white">
+                    PROOF OF ADDRESS
+                </div>
+            </div>
+            <div class="document-wrapper py-5 bg-white relative">
+                <p class="py-5">Upload Photo Identification</p>
+                <hr>
+                <div class="upload-wrapper py-5 flex mb-8 justify-around">
+                    <div class="upload w-2/4 ml-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="80" viewBox="0 0 92 80">
+                            <g fill="none" fill-rule="evenodd">
+                                <g fill-rule="nonzero" opacity=".357">
+                                    <path stroke="#979797" stroke-dasharray="1,1" stroke-width="2"
+                                        d="M82.946 5.853L68.457 1.97c-1.992-.534-4.046.686-4.587 2.704l-7.886 29.36c-.541 2.018.628 4.102 2.62 4.636l21.752 5.828c1.992.534 4.064-.681 4.605-2.7l5.901-22.023-7.916-13.923zM78 17.659L80.588 8l7.071 12.247L78 17.66z" />
+                                    <path fill="#637381"
+                                        d="M73.045 28.34c-.36.571-.816 1.163-1.39 1.794-.254.275-.52.53-.655.764l.101-.01a16.367 16.367 0 0 1 3.016-.03 2.98 2.98 0 0 1-.272-.363c-.39-.564-.659-1.305-.8-2.155zm5.14 5.06c-.206.135-.514.162-.925.052-.71-.19-1.813-.716-2.62-1.443-1.655-.253-2.91-.359-3.955-.308-.052.006-.113.01-.186.02-1.69 1.671-2.788 2.329-3.545 2.126a.868.868 0 0 1-.384-.213l-.371-.41-.015-.055a.879.879 0 0 1 .088-.517c.236-.468.979-1.11 2.289-1.51.212-.084.533-.158.954-.236.411-.41.863-.9 1.349-1.442.734-.835 1.289-1.708 1.743-2.468l.003-.01c-.043-1.223-.066-1.96.613-3.111.18-.333.585-.615.931-.522l.225.06c.215.057.4.187.51.377.452.782-.242 2.21-.883 3.37-.034.051-.056.095-.073.121.091 1.157.396 2.15.855 2.794.193.252.414.511.668.76.433.066.84.155 1.223.258 1.16.31 1.806.704 1.959 1.216a.779.779 0 0 1-.026.544.935.935 0 0 1-.427.547zm-1.163-.565c-.061-.12-.345-.455-1.563-.781-.06-.017-.122-.033-.226.043.552.479 1.121.828 1.521.935.061.017.116.02.17.025l.036.01c.048-.008.077-.01.112-.105-.01-.034-.017-.077-.05-.127zm-7.573-1.317a5.006 5.006 0 0 0-.628.152c-.98.41-1.665.91-1.821 1.262.553-.007 1.398-.464 2.45-1.414zm3.731-5.538l.058-.023c.144-.266.24-.508.35-.688l.067-.135c.233-.481.283-.745.176-1.002l-.133-.084a1.157 1.157 0 0 0-.096.089c-.265.33-.43.982-.422 1.843z" />
+                                </g>
+                                <path d="M-11 23h64v64h-64z" />
+                                <path fill="#919EAB" fill-rule="nonzero"
+                                    d="M26.875 27h-21.5C2.419 27 .027 29.385.027 32.3L0 74.7C0 77.615 2.392 80 5.348 80h32.277C40.581 80 43 77.615 43 74.7V42.9L26.875 27zM32 64.125h-7.875V72h-5.25v-7.875H11v-5.25h7.875V51h5.25v7.875H32v5.25zM24 46V31l15 15H24z" />
+                            </g>
+                        </svg>
+                      
+                        <p class="text-sm pt-32 pl-11 w-4/5 ">Drag files here to upload or</p>
+                        <div class="flex">
+                        <div class="file-container inline-block">
+                            <label class="custom-file-input ml-10" for="fileInput">Select a File</label>
+                            <input class="hidden-file-input" type="file" id="fileInput">
+                        </div>
+                        <p class="ml-2">from your device</p>
+                    </div>
+
+                        <p class="text-xs pt-8 text-gray-400 ">JPG, PNG or PDF only, maximum file size - 5MB</p>
+                    </div>
+                    <div class="upload-text text-gray-500">
+                        <p class="mb-5">YOUR DOCUMENT MUST BE:</p>
+                        <ul class="list-disc">
+                            <li>A Governent issued </li>
+                            <ul class="list-disc ml-14 mt-3 text-left">
+                                <li>Passport</li>
+                                <li>Driving Licence</li>
+                                <li>National ID Card</li>
+                            </ul>
+
+
+                            <li class="mt-5">Within it's expiry date</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-show-container">
+                    <div class="type-wrapper flex px-4 py-5 justify-between items-center text-gray-500">
+                        <div class="file-name flex items-center">
+                            <img src="https://i.postimg.cc/Y9JcNL75/pdf.png" alt="doc-icon" class="w-7 h-7 mr-2" loading="lazy">
+                            <p class="file-name w-20">project</p>
+                        </div>
+
+                        <p class="doc-format">PDF</p>
+                        <p class="doc-size">
+                            2 MBs
+                        </p>
+                        <p class="doc-status">UPLOADED</p>
+                        <img src="./sass/Assets/trash.png" alt="trash" class="trash cursor-pointer" loading="lazy">
+                    </div>
+                    <div class="type-wrapper flex px-4 py-5 justify-between items-center text-gray-500">
+                        <div class="file-name flex">
+                            <img src="https://i.postimg.cc/15WdDYQk/word.png" alt="doc-icon" class="w-7 mr-2" loading="lazy">
+                            <p class="file-name w-20">Details</p>
+                        </div>
+
+                        <p class="doc-format">DOC</p>
+                        <p class="doc-size">
+                            1 MBs
+                        </p>
+                        <p class="doc-status">UPLOADED</p>
+                        <img src="./sass/Assets/trash.png" alt="trash" class="trash cursor-pointer" loading="lazy">
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-container flex justify-between mt-6 w-7/12">
+                <a href="javascript:void(0);" class="btn-back mr-12" id="back">Back</a>
+                <a href="javascript:void(0);" class="btn-1" id="submit-doc-btn">Next</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="result-section hide-section">
+        <div class="container-box">
+            <div class="flex items-center pt-20 flex-col mb-14">
+                <h1 class="text-4xl font-semibold mb-4">Your fairest results</h1>
+                <p class="text-lg text-gray-600">16 Results for 30 years xied in 64117</p>
+            </div>
+            <div class="result-data-wrapper flex justify-center w-full flex-col items-center">
+                <div class="filter-wrapper flex justify-between w-5/6 ">
+                    <div>
+                        <input type="number" id="number-filter" placeholder="Years"
+                            class="py-2 px-5 border-2 border-grey-800 rounded-sm mr-3 outline-none">
+                        <input type="text" id="number-filter"
+                            class="py-2 px-5 border-2 border-grey-800 rounded-sm mr-3 outline-none"
+                            placeholder="Fixed Price" readonly>
+                        <button class="btn rounded-sm py-2 px-5 text-white bg-[#47c1bf]">Filter Results</button>
+                    </div>
+                    <input type="number" value="sort" class="border-2 border-grey-800 rounded-sm outline-none py-2 px-2"
+                        placeholder="sort by">
+                </div>
+                <div class="result-container flex flex-col pb-6">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="flex items-center justify-between py-3 px-5">
+                                <th>Lender</th>
+                                <th class="flex w-12 items-center ml-6">
+                                    <p>APR</p>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+                                        class="ml-2" viewBox="0 0 54 54" enable-background="new 0 0 54 54"
+                                        xml:space="preserve">
+                                        <path fill="#4AD5F6" opacity="1.000000" stroke="none" d="
+                               M1.000000,37.000000 
+                                   C1.000000,31.977907 1.000000,26.955816 1.281253,21.799393 
+                                   C1.944105,21.351168 2.545497,21.109165 2.675121,20.712856 
+                                   C5.822620,11.089698 12.291454,5.155836 22.167046,2.863093 
+                                   C22.567305,2.770168 22.727797,1.644500 23.000000,1.000000 
+                                   C25.700014,1.000000 28.400026,1.000000 31.215225,1.300632 
+                                   C31.662424,1.969495 31.945087,2.593697 32.333652,2.668615 
+                                   C42.734043,4.673884 49.705669,10.615688 53.259159,20.614779 
+                                   C53.364746,20.911880 54.398827,20.879019 55.000000,21.000000 
+                                   C55.000000,26.022093 55.000000,31.044184 54.735046,36.203102 
+                                   C54.010750,36.779171 53.346779,37.133202 53.123035,37.670544 
+                                   C50.175285,44.749783 45.705509,50.339554 38.354496,53.260483 
+                                   C38.053459,53.380100 38.110035,54.399700 38.000000,55.000000 
+                                   C31.645601,55.000000 25.291204,55.000000 18.797276,54.737717 
+                                   C11.460884,50.312927 5.454767,45.048061 2.375905,37.027187 
+                                   C2.313972,36.865845 1.475948,37.002415 1.000000,37.000000 
+                               M31.374916,18.912235 
+                                   C34.551594,21.897202 32.935989,23.888002 30.187208,26.052101 
+                                   C27.716946,27.996923 25.617556,30.412823 23.354570,32.620926 
+                                   C26.620687,33.785301 29.699739,34.725811 31.290787,33.587147 
+                                   C34.484310,31.301634 37.115208,28.061876 39.453037,24.835361 
+                                   C40.331406,23.623096 40.159069,21.255213 39.755577,19.585825 
+                                   C38.734291,15.360395 33.199604,11.988975 27.913818,12.000022 
+                                   C22.629562,12.011065 18.795433,14.771829 17.332853,19.574945 
+                                   C18.669426,20.431526 19.982616,21.273123 21.295807,22.114719 
+                                   C21.248262,21.553728 21.200718,20.992737 21.153173,20.431746 
+                                   C24.378819,19.722132 27.604462,19.012518 31.374916,18.912235 
+                               M24.928057,39.611042 
+                                   C25.059347,41.639736 25.190638,43.668427 25.321926,45.697121 
+                                   C27.182276,45.575096 29.645882,46.116890 30.725510,45.135765 
+                                   C31.714233,44.237240 31.987057,40.756493 31.183275,40.088425 
+                                   C29.884043,39.008553 27.443619,39.301685 24.928057,39.611042 
+                               z" />
+                                    </svg>
+                                </th>
+                                <th>Rate</th>
+                                <th class="flex w-28 items-center">
+                                    <p class="w-44">Est. Payment/Fees</p>
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+                                        class="ml-2" viewBox="0 0 54 54" enable-background="new 0 0 54 54"
+                                        xml:space="preserve">
+                                        <path fill="#4AD5F6" opacity="1.000000" stroke="none" d="
+                               M1.000000,37.000000 
+                                   C1.000000,31.977907 1.000000,26.955816 1.281253,21.799393 
+                                   C1.944105,21.351168 2.545497,21.109165 2.675121,20.712856 
+                                   C5.822620,11.089698 12.291454,5.155836 22.167046,2.863093 
+                                   C22.567305,2.770168 22.727797,1.644500 23.000000,1.000000 
+                                   C25.700014,1.000000 28.400026,1.000000 31.215225,1.300632 
+                                   C31.662424,1.969495 31.945087,2.593697 32.333652,2.668615 
+                                   C42.734043,4.673884 49.705669,10.615688 53.259159,20.614779 
+                                   C53.364746,20.911880 54.398827,20.879019 55.000000,21.000000 
+                                   C55.000000,26.022093 55.000000,31.044184 54.735046,36.203102 
+                                   C54.010750,36.779171 53.346779,37.133202 53.123035,37.670544 
+                                   C50.175285,44.749783 45.705509,50.339554 38.354496,53.260483 
+                                   C38.053459,53.380100 38.110035,54.399700 38.000000,55.000000 
+                                   C31.645601,55.000000 25.291204,55.000000 18.797276,54.737717 
+                                   C11.460884,50.312927 5.454767,45.048061 2.375905,37.027187 
+                                   C2.313972,36.865845 1.475948,37.002415 1.000000,37.000000 
+                               M31.374916,18.912235 
+                                   C34.551594,21.897202 32.935989,23.888002 30.187208,26.052101 
+                                   C27.716946,27.996923 25.617556,30.412823 23.354570,32.620926 
+                                   C26.620687,33.785301 29.699739,34.725811 31.290787,33.587147 
+                                   C34.484310,31.301634 37.115208,28.061876 39.453037,24.835361 
+                                   C40.331406,23.623096 40.159069,21.255213 39.755577,19.585825 
+                                   C38.734291,15.360395 33.199604,11.988975 27.913818,12.000022 
+                                   C22.629562,12.011065 18.795433,14.771829 17.332853,19.574945 
+                                   C18.669426,20.431526 19.982616,21.273123 21.295807,22.114719 
+                                   C21.248262,21.553728 21.200718,20.992737 21.153173,20.431746 
+                                   C24.378819,19.722132 27.604462,19.012518 31.374916,18.912235 
+                               M24.928057,39.611042 
+                                   C25.059347,41.639736 25.190638,43.668427 25.321926,45.697121 
+                                   C27.182276,45.575096 29.645882,46.116890 30.725510,45.135765 
+                                   C31.714233,44.237240 31.987057,40.756493 31.183275,40.088425 
+                                   C29.884043,39.008553 27.443619,39.301685 24.928057,39.611042 
+                               z" />
+                                    </svg>
+                                </th>
+                                <th>Questions?</th>
+                                <th>Apply Now</th>
+                            </tr>
+
+                        </thead>
+                        <tbody class="px-6" id="data-container">
+                        </tbody>
+                    </table>
+                    <div class="btn-container flex justify-center mt-6">
+                        <button id="go-back" class="py-2 px-16 rounded-tl-lg rounded-bl-lg go-back"><img
+                                src="./sass/Assets/arrow (1).webp" alt="arrow" class="w-5" loading="lazy"></button>
+                        <button id="load-more" class="py-2 px-16 rounded-tr-lg rounded-br-lg load-more"><img
+                                src="./sass/Assets/arrow (2).webp" alt="arrow" class="w-5" loading="lazy"></button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="filter-result-section hide-section">
+        <div class="container-box">
+            <div class="flex items-center pt-20 flex-col mb-14">
+                <h1 class="text-4xl font-semibold mb-14">Your fairest results</h1>
+                <div class="filter-wrapper py-5 flex justify-between">
+                    <div class="w-4/6 bg-white px-5 py-5 data-wrapper rounded">
+                        <table class=" w-full">
+                            <thead>
+                                <tr class="flex justify-between border-b-4 py-5 items-start">
+                                    <th class="ml-16">RATE TYPE</th>
+                                    <th class="ml-12">FAIR RATE/ APR</th>
+                                    <th>POINTS/CREDITS</th>
+                                    <th>PER MONTH</th>
+                                </tr>
+                            </thead>
+                            <tbody id="filter-container">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="check-wrapper bg-white relative py-7 px-9 rounded">
+                        <div class="flex justify-between border-b-2 pb-6">
+                            <div>
+                                <div class="checkbox-container mb-4">
+                                    <input type="checkbox" id="parent-checkbox-fixed" class="hidden" />
+                                    <label for="parent-checkbox-fixed"
+                                        class="checkbox-label flex items-center cursor-pointer">
+                                        <span
+                                            class="checkbox-icon w-5 h-5 border-2 border-gray-300 rounded-md mr-2 flex justify-center items-center">
+                                        </span>
+                                        <p class="text-base text-gray-700">Fixed</p>
+                                    </label>
+                                </div>
+
+                                <div class="small-checkboxes fixedSmall">
+                                    <label class="small-checkbox mb-2">
+                                        <input type="checkbox" class="hidden checkbox1" value="5" />
+                                        <span
+                                            class="small-checkbox-icon w-3 h-3 rounded-md border border-gray-300"></span>
+                                        <span class="small-checkbox-label text-sm text-gray-500">5 years</span>
+                                    </label>
+                                    <label class="small-checkbox mb-2">
+                                        <input type="checkbox" class="hidden checkbox2" value="8" />
+                                        <span
+                                            class="small-checkbox-icon w-3 h-3 rounded-md border border-gray-300"></span>
+                                        <span class="small-checkbox-label text-sm text-gray-500">8 years</span>
+                                    </label>
+                                    <label class="small-checkbox">
+                                        <input type="checkbox" class="hidden checkbox3" value="9" />
+                                        <span
+                                            class="small-checkbox-icon w-3 h-3 rounded-md border border-gray-300"></span>
+                                        <span class="small-checkbox-label text-sm text-gray-500">9 years</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="checkbox-container mb-4">
+                                    <input type="checkbox" id="parent-checkbox-adjustable" class="hidden" />
+                                    <label for="parent-checkbox-adjustable"
+                                        class="checkbox-label flex items-center cursor-pointer">
+                                        <span
+                                            class="checkbox-icon w-5 h-5 border-2 border-gray-300 rounded-md mr-2 flex justify-center items-center">
+                                        </span>
+                                        <p class="text-base text-gray-700">Adjustable</p>
+                                    </label>
+                                </div>
+
+                                <div class="small-checkboxes adjustable">
+                                    <label class="small-checkbox mb-2">
+                                        <input type="checkbox" class="hidden checkboxAdjust1" />
+                                        <span
+                                            class="small-checkbox-icon w-3 h-3 rounded-md border border-gray-300"></span>
+                                        <span class="small-checkbox-label text-sm text-gray-500">5 years</span>
+                                    </label>
+                                    <label class="small-checkbox mb-2">
+                                        <input type="checkbox" class="hidden checkboxAdjust2" />
+                                        <span
+                                            class="small-checkbox-icon w-3 h-3 rounded-md border border-gray-300"></span>
+                                        <span class="small-checkbox-label text-sm text-gray-500">8 years</span>
+                                    </label>
+                                    <label class="small-checkbox">
+                                        <input type="checkbox" class="hidden checkboxAdjust3" />
+                                        <span
+                                            class="small-checkbox-icon w-3 h-3 rounded-md border border-gray-300"></span>
+                                        <span class="small-checkbox-label text-sm text-gray-500">9 years</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-6">
+                            <p class="mb-2 text-sm text-gray-500">Max per month</p>
+                            <div class="range-container flex items-center">
+                                <input type="range" id="rangeInput1" class="range-input" min="600" max="55000"
+                                    step="1" />
+                                <input type="text" id="rangeValue1" class="range-value rounded  py-2 px-1 text-sm"
+                                    readonly />
+                            </div>
+                        </div>
+                        <div>
+                            <p class="mb-2 text-sm text-gray-500">Max points/credits</p>
+
+                            <div class="range-container flex items-center">
+                                <input type="range" id="rangeInput2" class="range-input" min="400" max="10000"
+                                    step="1" />
+                                <input type="text" id="rangeValue2" class="range-value rounded py-2 px-1 text-sm"
+                                    readonly />
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex items-center mt-5 w-full justify-around relative right-40">
+                    <div class="flex items-center mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40"
+                            height="36" viewBox="0 0 36 36">
+                            <defs>
+                                <circle id="a" cx="18" cy="18" r="18" />
+                                <path id="c"
+                                    d="M10 0C4.486 0 0 4.486 0 10s4.486 10 10 10 10-4.486 10-10S15.514 0 10 0m0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8m0-4.1a1.1 1.1 0 1 0 .001 2.201A1.1 1.1 0 0 0 10 13.9M10 4C8.625 4 7.425 5.161 7.293 5.293A1.001 1.001 0 0 0 8.704 6.71C8.995 6.424 9.608 6 10 6a1.001 1.001 0 0 1 .591 1.808C9.58 8.548 9 9.616 9 10.737V11a1 1 0 1 0 2 0v-.263c0-.653.484-1.105.773-1.317A3.013 3.013 0 0 0 13 7c0-1.654-1.346-3-3-3" />
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <mask id="b" fill="#fff">
+                                    <use xlink:href="#a" />
+                                </mask>
+                                <use fill="#FFF" xlink:href="#a" />
+                                <g mask="url(#b)">
+                                    <g transform="translate(8 8)">
+                                        <mask id="d" fill="#fff">
+                                            <use xlink:href="#c" />
+                                        </mask>
+                                        <use fill="green" xlink:href="#c" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="text-lg text-gray-500">Rates and fee as of 12:06 PM</p>
+                    </div>
+                    <a href="javascript:void(0);" class="btn-1 relative right-10" id="moveToProcess">NEXT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- process section -->
+    <section class="process-section hide-section">
+        <div class="bg-white border-2">
+            <div class="container-box">
+                <div class="flex items-center w-full py-5 justify-between">
+
+                    <div class="flex items-center">
+                        <div class="circle">
+                            <div class="outline"></div>
+                            <div class="text text-3xl font-bold">60%</div>
+                        </div>
+                        <div class="ml-3">
+                            <h1 class="text-3xl font-semibold mb-2">Your Mortgage is 60% Complete</h1>
+                            <p class="text-gray-500 text-sm">Great Start Adrian! Please complete remaining steps!</p>
+                        </div>
+                    </div>
+                    <div class="py-3 px-4 border-2 flex rounded cursor-pointer">
+                        <p class="text-sm">Talk to us</p>
+                        <span class="border-l-2 mx-2"></span>
+                        <img src="./sass/Assets/arrow (2).webp" alt="rightarrow" class="opacity-4  0 w-4 h-4 mt-1" loading="lazy">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-box">
+            <div class="flex justify-center items-center flex-col">
+                <div class="details bg-white mt-24 flex items-center justify-between border-2 rounded">
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 border-2 rounded-full border-gray-600 relative">
+                            <p
+                                class="text-lg text-gray-600 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+                                1</p>
+                        </div>
+                        <p class="text-2xl text-gray-600 ml-3">Personal details</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-red-400 text-sm">Edit</p>
+                        <img src="./sass/Assets/tick.webp" alt="tick" class="w-8 h-8 ml-3" loading="lazy">
+                    </div>
+                </div>
+                <div class="details bg-white mt-5 flex items-center justify-between border-2 rounded">
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 border-2 rounded-full border-gray-600 relative">
+                            <p
+                                class="text-lg text-gray-600 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+                                2</p>
+                        </div>
+                        <p class="text-2xl text-gray-600 ml-3">Employment & Income</p>
+                    </div>
+                    <div class="flex items-center">
+                        <p class="text-red-400 text-sm">Edit</p>
+                        <img src="./sass/Assets/tick.webp" alt="tick" class="w-8 h-8 ml-3" loading="lazy">
+                    </div>
+                </div>
+                <div class="details bg-white mt-5 flex items-center justify-between border-2 rounded">
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 border-2 rounded-full border-gray-600 relative">
+                            <p
+                                class="text-lg text-gray-600 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+                                3</p>
+                        </div>
+                        <p class="text-2xl text-gray-600 ml-3">Adverse events</p>
+                    </div>
+                    <div class="flex relative left-5">
+                        <a href="javascript:void(0);" class="btn-2" id="next-dashboard">Get Started</a>
+                        <div class="border-l-2 mx-2 relative right-12 py-3"></div>
+                        <img src="./sass/Assets/right.png" alt="rightarrow"
+                            class="opacity-4  0 w-6 h-6 absolute right-6 top-3" loading="lazy">
+                    </div>
+                </div>
+                <div class="details bg-gray-300 opacity-40 mt-5 border-2 rounded">
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 border-2 rounded-full border-gray-600 relative">
+                            <p
+                                class="text-lg text-gray-600 absolute top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4">
+                                4</p>
+                        </div>
+                        <p class="text-2xl text-gray-600 ml-3">Upload Documents</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard-section -->
+    <section class="dashboard-section">
+        <div class="container-box">
+            <h1 class="text-4xl font-semibold mt-16 mb-10 ml-12">Good morning <p class="main-name inline"></p>
+            </h1>
+            <div class="flex justify-evenly">
+                <div class="complete-app bg-white flex justify-around">
+                    <div class="circle mt-2">
+                        <div class="outline"></div>
+                        <div class="text text-3xl font-bold">60%</div>
+                    </div>
+                    <div class="relative">
+                        <p class="text-2xl mb-1">My first home</p>
+                        <p class="text-base w-64 text-gray-500 mb-3">Great start! You are so close to buying your dream
+                            house</p>
+                        <div class="flex relative">
+                            <a href="javascript:void(0);" class="btn-3" id="next-dashboard">Complete Application</a>
+                            <div class="border-l-2 mx-2 relative right-16 py-3"></div>
+                            <img src="./sass/Assets/right.png" alt="rightarrow"
+                                class="opacity-4  0 w-6 h-6 absolute right-10 top-3" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- another-one -->
+                <div class="complete-app border-dashed border-4 flex">
+                    <div class="relative ml-4">
+                        <p class="text-2xl mb-1">New application?</p>
+                        <p class="text-base w-72
+                     text-gray-500 mb-3">Looking for buy or rent? Get started with an idae how much you can afford</p>
+                        <div class="py-3 px-3 border-4  border-gray-300 flex rounded-md w-40 cursor-pointer main-btn"
+                            id="main-btn">
+                            <a href="javascript:void(0);" class="text-sm">Get Started</a>
+                            <span class="border-l-2 mx-2 border-gray-300"></span>
+                            <img src="./sass/Assets/arrow (2).webp" alt="rightarrow"
+                                class="opacity-40 w-5 h-5 ml-3 mt-[2px] image-effect" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-box flex justify-between">
+            <div class="contact">
+                <p class="footer-heading">Schedule a conversation</p>
+                <a href="javascript:void(0);" class="mail mb-3 block">hello@fairrate.com</a>
+                <p class="number mb-4"><img src="./sass/Assets/call.webp" alt="cell-icon"
+                        class="cell-icon inline-block mr-2" loading="lazy">+62 202 555 0117</p>
+                <div class="app-icon mb-16 flex justify-between w-32">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                        <path fill="#6B7C93" fill-rule="evenodd"
+                            d="M0 16.5C0 7.387 7.387 0 16.5 0S33 7.387 33 16.5 25.613 33 16.5 33 0 25.613 0 16.5zm26-5.725a7.23 7.23 0 0 1-2.12.596 3.788 3.788 0 0 0 1.623-2.094 7.331 7.331 0 0 1-2.347.92A3.64 3.64 0 0 0 20.461 9c-2.039 0-3.692 1.696-3.692 3.787 0 .297.032.586.095.863-3.068-.158-5.789-1.666-7.61-3.958-.318.559-.5 1.21-.5 1.904 0 1.315.653 2.474 1.643 3.153a3.622 3.622 0 0 1-1.673-.476v.048c0 1.835 1.274 3.366 2.962 3.714-.31.086-.636.133-.973.133-.238 0-.47-.024-.695-.07.47 1.505 1.833 2.6 3.448 2.63A7.29 7.29 0 0 1 8 22.297 10.247 10.247 0 0 0 13.66 24c6.793 0 10.505-5.772 10.505-10.778l-.012-.49A7.481 7.481 0 0 0 26 10.775z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                        <path fill="#6B7C93" fill-rule="evenodd"
+                            d="M0 16.5C0 7.387 7.387 0 16.5 0S33 7.387 33 16.5 25.613 33 16.5 33 0 25.613 0 16.5zm25 1.337c0-3.3-1.616-4.837-3.771-4.837-1.74 0-2.517 1.045-2.953 1.775v.036h-.021l.021-.036v-1.523H15C15.044 14.261 15 24 15 24h3.276v-6.003c0-.322.022-.64.109-.87.237-.643.775-1.307 1.68-1.307 1.186 0 1.66.986 1.66 2.43V24H25v-6.163zM11.012 8C9.796 8 9 8.864 9 10c0 1.11.773 2 1.966 2h.023c1.24 0 2.011-.89 2.011-2-.024-1.136-.771-2-1.988-2zM9 23h3V13H9v10z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                        <path fill="#6B7C93" fill-rule="evenodd"
+                            d="M0 16.5C0 7.387 7.387 0 16.5 0S33 7.387 33 16.5 25.613 33 16.5 33 0 25.613 0 16.5zM17.32 26v-9.001h2.366L20 13.897h-2.68l.004-1.552c0-.81.073-1.243 1.18-1.243h1.48V8h-2.368c-2.843 0-3.844 1.505-3.844 4.035v1.862H12V17h1.772V26h3.548z" />
+                    </svg>
+                </div>
+                <p class="copy-wright-text">© 2018 Deivas.io, Inc. All rights reserved.</p>
+            </div>
+            <div>
+                <p class="footer-heading mb-4">COMPANY</p>
+                <p class="mb-2 footer-text">Resources</p>
+                <p class="footer-text">Careers</p>
+            </div>
+            <div>
+                <div class="footer-heading mb-4">LEGAL</div>
+                <p class="footer-text mb-2">NMLS Consumer Access</p>
+                <p class="footer-text mb-2"> Privacy Policy</p>
+                <p class="footer-text mb-2">Terms of Use</p>
+                <p class="footer-text">Disclosures & Licensing</p>
+            </div>
+            <div class="footer-logo">
+                <img src="./sass/Assets/group-5.svg" alt="logo-img" class="mb-4" loading="lazy">
+                <p class="footer-text w-80">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                    fermentum massa justo sit amet risus. Praesent commodo cursus magna.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

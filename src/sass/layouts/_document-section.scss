@@ -1,0 +1,119 @@
+.document-section {
+    background-color: $light-grey-color;
+    min-height: 1100px;
+    height: 80vh;
+
+    .container-box {
+        padding-top: 70px;
+
+        .document-text {
+            width: 537px;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .heading-wrapper {
+            .identity {
+                background-color: #637381;
+            }
+        }
+
+        .document-wrapper {
+            width: 630px;
+            max-height: 570px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+
+            .upload-wrapper {
+                .upload {
+                    width: 290px;
+                    height: 250px;
+                    border: 3px dotted $light-grey-color-2;
+                    position: relative;
+                    border-radius: 5px;
+
+                    svg {
+                        position: absolute;
+                        left: 55%;
+                        top: 25%;
+                        transform: translate(-50%, -40%);
+                    }
+                }
+            }
+
+            .type-show-container {
+                overflow-y: auto;
+                height: 150px;
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                }
+
+                .type-wrapper {
+                    border: 0.5px solid $light-grey-color-2;
+                    border-left: none;
+                    border-right: none;
+                    background-color: $light-grey-color;
+
+                    .trash {
+                        width: 20px;
+                    }
+
+                    svg {
+                        position: absolute;
+                        cursor: pointer;
+
+                        path:hover {
+                            fill: $danger;
+                        }
+                    }
+                }
+            }
+
+            .file-names{
+                width: 90px; 
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis;
+            }
+            .file-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+            
+              .current-file-name {
+                flex-grow: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: blue;
+                text-decoration: underline;
+                cursor: pointer;
+                display: none;
+              }
+            
+              /* Style the file input to be visually hidden */
+              .hidden-file-input {
+                position: absolute;
+                clip: rect(0, 0, 0, 0);
+              }
+            
+              /* Style the custom file input button */
+              .custom-file-input {
+            /*     padding: 5px 10px; */
+                text-decoration:underline;
+            /*     background-color: ; */
+                color: #12b5e2;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+            
+            
+            
+            
+
+        }
+    }
+}

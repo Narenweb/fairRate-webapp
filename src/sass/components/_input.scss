@@ -1,0 +1,11 @@
+.inp {
+    @include inputs(12px 0px 12px 17px, 238px);
+    color: $light-grey-color-2;
+    margin-right: 20px;
+}
+.inp-1 {
+    @include inputs(11px 0 11px 50px, 350px);
+}
+.inp-2 {
+    @include inputs(11px 0 11px 20px, 350px);
+}
